@@ -2,7 +2,7 @@
 function fetchMessages() {
 
     // Build the endpoint
-    const endpoint = "http://localhost:5002/messages?id=1"
+    const endpoint = "http://127.0.0.1:5002/messages?id=1"
 
     fetch(endpoint)
         .then(r => r.json())
